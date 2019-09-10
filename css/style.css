@@ -92,7 +92,7 @@ button:focus {
 }
 
 .section_gap {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .d_flex {
@@ -240,12 +240,12 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============== header css =============*/
-.header_area {
-  position: absolute;
+.header_area {  
   top: 0;
   left: 0;
   width: 100%;
   z-index: 20;
+  background-color: transparent;
 }
 
 .header-top {
@@ -311,7 +311,7 @@ button:focus {
 }
 
 .navbar {
-  background: #fff;
+  background: transparent;
   padding: 0px 25px;
 }
 
@@ -321,7 +321,7 @@ button:focus {
 
 .navbar .menu_nav .nav-item .nav-link {
   font: 500 12px/80px "Poppins", sans-serif;
-  color: #222222;
+  color:white;
   text-transform: uppercase;
   padding: 0px;
 }
@@ -3460,7 +3460,8 @@ h1, h2, h3, h4, h5, h6 {
 /*============== footer-area css ===============*/
 .footer-area {
   background: #04091e;
-  padding: 142px 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .single-footer-widget ul li a {
