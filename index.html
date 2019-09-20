@@ -73,17 +73,17 @@
                 <div class="container">
                     <div class="hotel_booking_table">
                         <div class="col-md-3">
-                            <h2>Book<br> Your Room</h2>
+                            <h2>FIND Your<br>Room Now</h2>
                         </div>
                         <div class="col-md-9">
                             <div class="boking_table">
-                                <form id="checkForm" method="POST" action="">
+                                <form id="checkForm" method="POST">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="book_tabel_item">
                                                 <div class="form-group">
                                                     <div class='input-group date' id='datetimepicker11'>
-                                                        <input type='text' class="form-control" placeholder="Arrival Date"/>
+                                                        <input type='text' class="form-control" id="arrivalDate" placeholder="Arrival Date"/>
                                                         <span class="input-group-addon">
                                                             <i class="fa fa-calendar" aria-hidden="true"></i>
                                                         </span>                                                        
@@ -92,7 +92,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <div class='input-group date' id='datetimepicker1'>
-                                                        <input type='text' class="form-control" placeholder="Departure Date"/>
+                                                        <input type='text' class="form-control" id="depDate" placeholder="Departure Date"/>
                                                         <span class="input-group-addon">
                                                             <i class="fa fa-calendar" aria-hidden="true"></i>
                                                         </span>                                                       
@@ -148,7 +148,7 @@
                                                     </select>
                                                 </div>
                                                 <small id="room_error" class="form-text text-muted"></small>
-                                                <a class="book_now_btn button_hover" href="#">Check Availabilty</a>
+                                                <a class="book_now_btn button_hover" href="#" id="submit">Check Availabilty</a>
                                             </div>
                                         </div>
                                     </div>
@@ -160,7 +160,12 @@
             </div>
         </section>
         <!--================Banner Area =================-->
-          <!--================ Accomodation Area  =================-->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!--================ Accomodation Area  =================-->
         <section class="accomodation_area section_gap" id="accomodation">
             <div class="container">
                 <div class="section_title text-center">
@@ -425,16 +430,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <div class="col-lg-4 col-sm-12 footer-social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </footer>
-		<!--================ End footer Area  =================-->
-        
-        
-        
+		<!--================ End footer Area  =================-->                        
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
