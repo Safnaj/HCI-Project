@@ -1,10 +1,12 @@
-$(document).on("click","#checkForm",function(event){
+//Check Room Validation
+
+$(document).on("click","#submit",function(event){
     event.preventDefault();
     //alert("Ready");        
     if($("#adult").val() == "0") {
         $("#adult").addClass("border-danger");
         $("#adult_error").html("<span class='text-danger'>Please Choose Number of Adults</span>");
-    }
+    }    
     if($("#child").val() == "0") {
         $("#child").addClass("border-danger");
         $("#child_error").html("<span class='text-danger'>Please Choose Number of Childs</span>");
@@ -21,8 +23,23 @@ $(document).on("click","#checkForm",function(event){
         $("#date2_error").addClass("border-danger");
         $("#date2_error").html("<span class='text-danger'>Please Choose Departure Date</span>");
     }
-    else{
-        //alert(result);
-        $("#msgLogin").show().html(result);
+    if($("#adult").val() != "0") {        
+        $("#adult_error").remove();
     }
+    if($("#child").val() != "0") {        
+        $("#child_error").remove();
+    }
+    if($("#rooms").val() != "0") {        
+        $("#room_error").remove();
+    }
+    if($("#arrivalDate").val() != "") {        
+        $("#date1_error").remove();
+    }
+    if($("#depDate").val() != "") {        
+        $("#date2_error").remove();
+    }
+    else{
+       
+    }
+
 });

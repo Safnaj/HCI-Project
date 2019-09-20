@@ -19,10 +19,7 @@ Table of Content:
 17/ footer
 
 =====================================================================*/
-/*----------------------------------------------------*/
-/*font Variables*/
-/*Color Variables*/
-/*=================== fonts ====================*/
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 .col-md-offset-right-1, .col-lg-offset-right-1 {
   margin-right: 8.33333333%;
@@ -3586,6 +3583,31 @@ h1, h2, h3, h4, h5, h6 {
   color: #f3c300;
 }
 
-/*---------------------------------------------------- */
+#result_row{
+  border: 1px solid rgb(119, 118, 118);
+  border-radius: 10px;
+}
 
-/*# sourceMappingURL=style.css.map */
+#result_col_1{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  
+}
+
+#result_col_2{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-right:auto;
+  text-align:left; 
+  position: relative;
+}
+
+#result_col_3{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-right:auto;
+  text-align:center; 
+  position: relative;  
+}
+
