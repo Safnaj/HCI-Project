@@ -39,7 +39,8 @@ $(document).on("click","#submit",function(event){
         $("#date2_error").remove();
     }
     else{
-       
+        alert("ready");
+        //window.location.href = "available.html";
     }
 
 });
