@@ -95,6 +95,10 @@ button:focus {
   padding: 80px 0;
 }
 
+.section_acc_gap {
+  padding: 120px 0 80px 0;
+}
+
 .d_flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,7 +492,7 @@ button:focus {
 
 .banner_area .position {
   width: 100%;
-  bottom: 0;
+  bottom: -85px;
   left: 0;
   position: absolute;
 }
