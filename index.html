@@ -70,7 +70,7 @@
                         </div>
                         <div class="col-md-9">
                             <div class="boking_table">
-                                <form>
+                                <form id="checkForm" method="POST" action="">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="book_tabel_item">
@@ -79,24 +79,26 @@
                                                         <input type='text' class="form-control" placeholder="Arrival Date"/>
                                                         <span class="input-group-addon">
                                                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                        </span>
+                                                        </span>                                                        
                                                     </div>
+                                                    <small id="date1_error" class="form-text text-muted"></small>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class='input-group date' id='datetimepicker1'>
                                                         <input type='text' class="form-control" placeholder="Departure Date"/>
                                                         <span class="input-group-addon">
                                                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                        </span>
+                                                        </span>                                                       
                                                     </div>
+                                                    <small id="date2_error" class="form-text text-muted"></small>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="book_tabel_item">
                                                 <div class="input-group">
-                                                    <select class="wide">
-                                                            <option selected value="0">No Of Adults</option>
+                                                    <select class="wide" id="adult">
+                                                        <option selected value="0">No Of Adults</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -109,8 +111,9 @@
                                                         <option value="10">10</option>
                                                     </select>
                                                 </div>
+                                                <small id="adult_error" class="form-text text-muted"></small>
                                                 <div class="input-group">
-                                                    <select class="wide">
+                                                    <select class="wide" id="child">
                                                         <option selected value="0">Number Of Child</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -124,18 +127,20 @@
                                                         <option value="10">10</option>
                                                     </select>
                                                 </div>
+                                                <small id="child_error" class="form-text text-muted"></small>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="book_tabel_item">
                                                 <div class="input-group">
-                                                    <select class="wide">
+                                                    <select class="wide" id="rooms">
                                                         <option selected value="0">No Of Rooms</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>                                                        
                                                     </select>
                                                 </div>
+                                                <small id="room_error" class="form-text text-muted"></small>
                                                 <a class="book_now_btn button_hover" href="#">Check Availabilty</a>
                                             </div>
                                         </div>
@@ -439,5 +444,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/stellar.js"></script>
         <script src="vendors/lightbox/simpleLightbox.min.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
