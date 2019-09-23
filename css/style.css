@@ -945,6 +945,7 @@ button:focus {
 .testimonial_slider .owl-dots {
   text-align: center;
   margin-top: 80px;
+  visibility: hidden;
 }
 
 .testimonial_slider .owl-dots .owl-dot {

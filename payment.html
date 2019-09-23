@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <title>Paradise with a view</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-image: url("image/rooms/background.jpg");
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        button{
+            width: 100%;
+            height:50px;
+            background-color: #22cbd4;
+            color: #f5feff;
+            border-radius: 8px;
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .previous {
+            background-color: #f1f1f1;
+            color: black;
+        }
+        /*payement style*/
+        .creditCardForm {
+            max-width: 700px;
+            background-color: #b0a9a9;
+            margin: 100px auto;
+            overflow: hidden;
+            padding: 25px;
+            color: #4c4e56;
+        }
+        .creditCardForm label {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .creditCardForm .heading h1 {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            color: #4c4e56;
+        }
+        .creditCardForm .payment {
+            float: left;
+            font-size: 18px;
+            padding: 10px 25px;
+            margin-top: 20px;
+            position: relative;
+        }
+        .creditCardForm .payment .form-group {
+            float: left;
+            margin-bottom: 15px;
+        }
+        .creditCardForm .payment .form-control {
+            line-height: 40px;
+            height: auto;
+            padding: 0 16px;
+        }
+        .creditCardForm .owner {
+            width: 63%;
+            margin-right: 10px;
+        }
+        .creditCardForm .CVV {
+            width: 35%;
+        }
+        .creditCardForm #card-number-field {
+            width: 100%;
+        }
+        .creditCardForm #expiration-date {
+            width: 49%;
+        }
+        .creditCardForm #credit_cards {
+            width: 50%;
+            margin-top: 25px;
+            text-align: right;
+        }
+        .creditCardForm #pay-now {
+            width: 100%;
+            margin-top: 25px;
+        }
+        .creditCardForm .payment .btn {
+            width: 100%;
+            margin-top: 3px;
+            font-size: 24px;
+            background-color: #2ec4a5;
+            color: white;
+            alignment: right;
+        }
+
+        .creditCardForm .payment select {
+            padding: 10px;
+            margin-right: 15px;
+        }
+        .transparent {
+            opacity: 0.2;
+        }
+        @media(max-width: 650px) {
+            .creditCardForm .owner,
+            .creditCardForm .CVV,
+            .creditCardForm #expiration-date,
+            .creditCardForm #credit_cards {
+                width: 100%;
+            }
+            .creditCardForm #credit_cards {
+                text-align: left;
+            }
+        }
+
+    </style>
+
+    <script language="JavaScript">
+        function validate() {
+            var owner= document.getElementById("owner").value;
+            var cvv = document.getElementById("cvv").value;
+            var cardNumber= document.getElementById("cardNumber").value;
+            if(owner==""||cvv==""||cardNumber==""){
+                alert("Please Enter Your Details");
+                return false;
+            }
+            alert("Payment Successfull");
+
+        }
+    </script>
+</head>
+<body>
+<!--================Header Area =================-->
+<!--================Header Area =================-->
+
+<!--================Banner Area =================-->
+<!--<section class="banner_area">-->
+    <!--<div class="booking_table" style="min-height: 400px;">-->
+        <!--<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>-->
+        <!--<div class="col-md-12">-->
+            <!--&lt;!&ndash;Navigation Menu Begins&ndash;&gt;-->
+            <!--<nav class="navbar navbar-expand-lg navbar-light">-->
+                <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+                <!--<a class="navbar-brand logo_h" href="index.html"><p style="padding-top: 10px; color: white;">Paradise With a View</p></a>-->
+                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+                <!--&lt;!&ndash;<a href="rooms.html" style="color: black" >Back</a>&ndash;&gt;-->
+                <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+                <!--<div class="collapse navbar-collapse offset" id="navbarSupportedContent">-->
+                    <!--<ul class="nav navbar-nav menu_nav ml-auto">-->
+                        <!--<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="rooms.html">Accomodation</a></li>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</nav>-->
+            <!--&lt;!&ndash;Navigation Menu Ends&ndash;&gt;-->
+            <!--<br/>-->
+            <!--<br/>-->
+            <!--<br/>-->
+            <!--<br/>-->
+        <!--</div>-->
+        <!--<div class="container">-->
+            <!--<div class="page-cover text-center">-->
+                <!--<h2 class="page-cover-tittle">Payment Information</h2>-->
+                <!--&lt;!&ndash;<ol class="breadcrumb">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="index.html">Home</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="active">Accomodation</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;</ol>&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="rooms.html" class="previous">&laquo; Back</a>&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/jquery.payform.min.js" charset="utf-8"></script>
+<script src="assets/js/script.js"></script>
+
+<!--<h3>Please enter your Payement Details Here</h3>-->
+<div class="creditCardForm">
+    <div class="heading">
+        <h1>Confirm Purchase</h1>
+    </div>
+    <div class="payment">
+        <form>
+            <div class="form-group owner">
+                <label for="owner">Owner</label>
+                <input type="text" class="form-control" id="owner" required>
+            </div>
+            <div class="form-group CVV">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" required>
+            </div>
+            <div class="form-group" id="card-number-field">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" required>
+            </div>
+            <div class="form-group" id="expiration-date">
+                <label>Expiration Date</label>
+                <select>
+                    <option value="01">January</option>
+                    <option value="02">February </option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select>
+                    <option value="16"> 2016</option>
+                    <option value="17"> 2017</option>
+                    <option value="18"> 2018</option>
+                    <option value="19"> 2019</option>
+                    <option value="20"> 2020</option>
+                    <option value="21"> 2021</option>
+                    <option value="22"> 2022</option>
+                    <option value="23"> 2023</option>
+                    <option value="24"> 2024</option>
+                    <option value="25"> 2025</option>
+                    <option value="26"> 2026</option>
+                </select>
+            </div>
+            <div class="form-group" id="credit_cards">
+                <img src="image/visa.png" id="visa" width="90" length="80">
+                <img src="image/master.png" id="mastercard" width="90" length="80">
+                <img src="image/american_express-512.png" id="amex" width="90" length="80">
+            </div>
+            <div class="form-group" id="pay-now">
+                <!--<button type="submit" class="btn btn-default" id="confirm-purchase" >Confirm</button>-->
+                <!--<a href="pages/success.html" class="next" style="background-color:#b0a9a9 "></a>-->
+                <center><button type="submit" onclick="validate()">Confirm</button></center>
+                <!--<input type="submit" value="submit" style="background-color: #cfbb0c">-->
+                <!--<a href="confirm.html" class="btn theme_btn button_hover">Confirm</a>-->
+            </div>
+        </form>
+    </div>
+</div>
+<!--<script>-->
+    <!--var owner = $('#owner'),-->
+        <!--cardNumber = $('#cardNumber'),-->
+        <!--cardNumberField = $('#card-number-field'),-->
+        <!--CVV = $("#cvv"),-->
+        <!--mastercard = $("#mastercard"),-->
+        <!--confirmButton = $('#confirm-purchase'),-->
+        <!--visa = $("#visa"),-->
+        <!--amex = $("#amex");-->
+    <!--cardNumber.payform('formatCardNumber');-->
+    <!--CVV.payform('formatCardCVC');-->
+    <!--cardNumber.keyup(function() {-->
+        <!--amex.removeClass('transparent');-->
+        <!--visa.removeClass('transparent');-->
+        <!--mastercard.removeClass('transparent');-->
+
+        <!--if ($.payform.validateCardNumber(cardNumber.val()) == false) {-->
+            <!--cardNumberField.removeClass('has-success');-->
+            <!--cardNumberField.addClass('has-error');-->
+        <!--} else {-->
+            <!--cardNumberField.removeClass('has-error');-->
+            <!--cardNumberField.addClass('has-success');-->
+        <!--}-->
+
+        <!--if ($.payform.parseCardType(cardNumber.val()) == 'visa') {-->
+            <!--mastercard.addClass('transparent');-->
+            <!--amex.addClass('transparent');-->
+        <!--} else if ($.payform.parseCardType(cardNumber.val()) == 'amex') {-->
+            <!--mastercard.addClass('transparent');-->
+            <!--visa.addClass('transparent');-->
+        <!--} else if ($.payform.parseCardType(cardNumber.val()) == 'mastercard') {-->
+            <!--amex.addClass('transparent');-->
+            <!--visa.addClass('transparent');-->
+        <!--}-->
+    <!--});-->
+    <!--confirmButton.click(function(e) {-->
+        <!--e.preventDefault();-->
+
+        <!--var isCardValid = $.payform.validateCardNumber(cardNumber.val());-->
+        <!--var isCvvValid = $.payform.validateCardCVC(CVV.val());-->
+
+        <!--if(owner.val().length < 5){-->
+            <!--alert("Wrong owner name");-->
+        <!--} else if (!isCardValid) {-->
+            <!--alert("Wrong card number");-->
+        <!--} else if (!isCvvValid) {-->
+            <!--alert("Wrong CVV");-->
+        <!--} else {-->
+            <!--// Everything is correct. Add your form submission code here.-->
+
+            <!--window.alert("Payement Successful");-->
+            <!--alert("Everything is correct");-->
+        <!--}-->
+
+    <!--});-->
+<!--</script>-->
+
+<!--&lt;!&ndash; Optional JavaScript &ndash;&gt;-->
+<!--&lt;!&ndash; jQuery first, then Popper.js, then Bootstrap JS &ndash;&gt;-->
+<!--<script src="js/jquery-3.2.1.min.js"></script>-->
+<!--<script src="js/popper.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<script src="vendors/owl-carousel/owl.carousel.min.js"></script>-->
+<!--<script src="js/jquery.ajaxchimp.min.js"></script>-->
+<!--<script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>-->
+<!--<script src="vendors/nice-select/js/jquery.nice-select.js"></script>-->
+<!--<script src="js/mail-script.js"></script>-->
+<!--<script src="js/stellar.js"></script>-->
+<!--<script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>-->
+<!--<script src="vendors/isotope/isotope-min.js"></script>-->
+<!--<script src="js/stellar.js"></script>-->
+<!--<script src="vendors/lightbox/simpleLightbox.min.js"></script>-->
+<!--&lt;!&ndash;gmaps Js&ndash;&gt;-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>-->
+<!--<script src="js/gmaps.min.js"></script>-->
+<!--&lt;!&ndash; contact js &ndash;&gt;-->
+<!--<script src="js/jquery.form.js"></script>-->
+<!--<script src="js/jquery.validate.min.js"></script>-->
+<!--<script src="js/contact.js"></script>-->
+<!--<script src="js/custom.js"></script>-->
+
+</body>
+</html>
