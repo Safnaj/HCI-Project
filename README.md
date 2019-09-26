@@ -1,5 +1,10 @@
 # HCI-Project
 Human Computer Interaction UI/UX Website Redesign
 
-### User Experience
-User experience design is the process of enhancing user satisfaction with a product by improving the usability, accessibility, and desirability provided in the interaction with a product.
+### Group Members
+* [Safnaj](https://github.com/Safnaj)
+* [Shaneli](https://github.com/amandaSFer)
+* [Shashikala](https://github.com/shashikala-weerasinghe)
+* [Prasangi](https://github.com/Prasangi)
+* [Janangi](https://github.com/janangiSenarathna)
+
