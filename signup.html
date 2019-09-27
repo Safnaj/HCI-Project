@@ -33,11 +33,11 @@
     button {
         background-color: #ffc107;
         color: white;
-        padding: 14px 20px;
+        padding: 10px 10px;
         margin: 8px 0;
         border: none;
         cursor: pointer;
-        width: 25%;
+        width: 95%;
         /*height: 2.5%;*/
         border-radius: 8px;
     }
@@ -123,28 +123,89 @@
 
     }
 </script>
+<!--<script language="JavaScript">-->
+    <!--function form()-->
+    <!--{-->
+        <!--var name = document.forms["regForm"]["name"];-->
+        <!--var psw = document.forms["regForm"]["psw"];-->
+        <!--var pswrepeat = document.forms["regForm"]["psw-repeat"];-->
 
+
+        <!--if (name.value == "")-->
+        <!--{-->
+            <!--window.alert("Please enter your E-mail.");-->
+            <!--name.focus();-->
+            <!--return false;-->
+        <!--}-->
+
+        <!--if (psw.value == "")-->
+        <!--{-->
+            <!--window.alert("Please enter a password.");-->
+            <!--psw.focus();-->
+            <!--return false;-->
+        <!--}-->
+
+        <!--if (pswrepeat.value == "")-->
+        <!--{-->
+            <!--window.alert("Please re-enter the password");-->
+            <!--pswrepeat.focus();-->
+            <!--return false;-->
+        <!--}-->
+
+        <!--if (name.value.indexOf("@", 0) < 0)-->
+        <!--{-->
+            <!--window.alert("Please enter a valid e-mail address.");-->
+            <!--name.focus();-->
+            <!--return false;-->
+        <!--}-->
+
+        <!--if (name.value.indexOf(".", 0) < 0)-->
+        <!--{-->
+            <!--window.alert("Please enter a valid e-mail address.");-->
+            <!--name.focus();-->
+            <!--return false;-->
+        <!--}-->
+        <!--if (pswrepeat.value!=psw.value){-->
+
+            <!--window.alert("Passwords are not matching");-->
+            <!--pswrepeat.focus();-->
+            <!--return false ;-->
+        <!--}-->
+
+        <!--//-->
+        <!--// if (what.selectedIndex < 1)-->
+        <!--// {-->
+        <!--//     alert("Please enter your course.");-->
+        <!--//     what.focus();-->
+        <!--//     return false;-->
+        <!--// }-->
+
+        <!--return true;-->
+    <!--}</script>-->
 </head>
 <body>
 <br><br>
-<div class="container" style="background-color: white">
+<div class="container" style="background-color: white ; height: 500px ; width: 500px">
     <center><h1>Register</h1></center>
 
     <p>Please fill in this form to create an account.</p>
     <hr>
 
+    <form name="regForm" method="post" onsubmit="return form()">
 
-    <input type="text" placeholder="Email" id="email" name="email" required>
-
-
-    <input type="password" placeholder="Password" id="password" name="psw" required>
+    <input type="text" placeholder="Email" id="email" name="email" >
 
 
-    <input type="password" placeholder="Repeat Password" id="passwordrepeat" name="psw-repeat" required>
+    <input type="password" placeholder="Password" id="password" name="psw" >
+
+
+    <input type="password" placeholder="Repeat Password" id="passwordrepeat" name="psw-repeat" >
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
     <center><button type="submit" onclick="validate()" class="registerbtn"><h5>Register</h5></button></center>
+    </form>
+
 </div>
 </body>
 </html>
