@@ -17,7 +17,11 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <style>
+ 
+
+
+
+ <style>
             body {background-color: powderblue;}
 
             h3    {color: black;}
@@ -44,12 +48,11 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                             <ul class="nav navbar-nav menu_nav ml-auto">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
                                 <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="accomodation.html">Accomodation</a></li>
-                                <li class="nav-item active"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>                                
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link" href="reviews.html">Contact</a></li>
                                 <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
                             </ul>
                         </div> 
@@ -65,7 +68,7 @@
                     <h2 class="page-cover-tittle">Gallery</h2>
                     <ol class="breadcrumb">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active">Gallery</li>
+                        <li >Gallery</li>
                     </ol>
                 </div>
             </div>
@@ -73,7 +76,7 @@
         <!--================Breadcrumb Area =================-->
         
         <!--================Breadcrumb Area =================-->
-        <section class="gallery_area section_gap">
+        <section class="gallery_area section_gap" style="padding-bottom:0px;">
             <sec class="container">
                 <div class="section_title text-center">
                     <h2 class="title_color">Paradise with a view  Hotel Gallery</h2>
@@ -157,33 +160,44 @@
                 
                 <body>
 
-                <!--<h2>Automatic Slideshow</h2>
-                <p>Change image every 2 seconds:</p>-->
-
-                <div class="slideshow-container">
+                 <div class="slideshow-container">
 
                     <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="image\gallery\01-1.jpg" width="1000" height="700">
+                        <img src="image/gallery/a09.jpg" width="1000" height="700">
                         <div class="text">Caption Text</div>
                     </div>
 
                     <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="image\gallery\07.jpg" width="1000" height="700">
+                        <img src="image/gallery/a10.jpg" width="1000" height="700">
                         <div class="text">Caption Two</div>
                     </div>
 
                     <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="image/gallery/02-1.jpg" width="1000" height="700">
+                        <img src="image/gallery/a11.jpg" width="1000" height="700">
                         <div class="text">Caption Three</div>
                     </div>
+                    <div class="mySlides fade">
+                        <img src="image/gallery/a12.jpg" width="1000" height="700">
+                        <div class="text">Caption Text</div>
+                    </div>
 
-                </div>
+                    <div class="mySlides fade">
+                        <img src="image/gallery/a13.jpg" width="1000" height="700">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="image/gallery/a14.jpg" width="1000" height="700">
+                        <div class="text">Caption Three</div>
+                    </div>
+                 </div>
                 <br>
-
+			
+				
                 <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -211,7 +225,67 @@
                     }
                 </script>
 
-                <div class="row">
+				       <section class="accomodation_area section_gap" id="accomodation">
+            <div class="container" >
+                <div class="section_title text-center">
+                    <h2 class="title_color">Hotel Gallery</h2>
+                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+                </div>
+                <div class="row mb_30" align ="middle">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <h5>Indoor</h5> <br/>
+							<div class="hotel_img">
+                                <img src="image\gallery\i111.jpg" alt="">
+                                <a href="indoor.html" class="btn theme_btn button_hover">See more...</a>
+                            </div>
+                            <h4 class="sec_h4">Enjoy our tranquile indoor space</h4></a>
+                            
+                        </div>
+                    </div>
+                   <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <h5>Food</h5> <br/>
+							<div class="hotel_img">
+                                <img src="image/gallery/f111.jpg" alt="">
+                                <a href="food.html" class="btn theme_btn button_hover">See more...</a>
+                            </div>
+                            <h4 class="sec_h4">We are vegan-friendly! We use fresh ingredients only</h4></a>
+                         
+                        </div>
+                    </div>
+                   <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <h5>Outdoor</h5> <br/>
+							<div class="hotel_img">
+                                <img src="image\gallery\O111.jpg" alt="">
+                                <a href="outdoor.html" class="btn theme_btn button_hover">See more...</a>
+                            </div>
+                            <h4 class="sec_h4">Enjoy our serene natural beauty</h4></a>
+                            
+                        </div>
+                    </div>
+                  <div class="col-lg-3 col-sm-6">
+                        <div class="accomodation_item text-center">
+                            <h5>Activities</h5> <br/>
+							<div class="hotel_img">
+                                <img src="image\gallery\A111.jpg" alt="">
+                                <a href="Activities.html" class="btn theme_btn button_hover">See more...</a>
+                            </div>
+                            <h4 class="sec_h4">Enjoy our serene natural beauty</h4></a>
+                            
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+ 
+				
+				
+				
+				
+				
+ <!--               <div class="row">
                     <div class="col" width="5">
                         <section>
                         <img src="image\gallery\07.jpg" alt="Snow" style="width:75%">
@@ -231,7 +305,7 @@
                         <p> We are vegan-friendly! We use
                             fresh ingredients only  </p>
                             <a href="food.html">See More...</a>
-        </section>
+						</section>
                     </div>
                     <div class="col" width="5">
                         <section>
@@ -241,14 +315,11 @@
                             <a href="outdoor.html">See More... </a>
                         </section>
                     </div>
-
-
-
                 </div>
 
 
 
-                <!--   <div class="row imageGallery1" id="gallery">
+                   <div class="row imageGallery1" id="gallery">
                        <div class="col-md-4 gallery_item">
                            <div class="gallery_img">
                                <img src="image/gallery/01.jpg" alt="">
@@ -335,15 +406,7 @@
                     <div class="col-lg-3  col-md-6 col-sm-6">
                         <div class="single-footer-widget">
                             <h6 class="footer_title">About Agency</h6>
-                            <p>Located short steps away
-                                from the excitement of
-                                world famous Waikiki
-                                beach, the Royal Garden
-                                at Waikiki hotel awaits you
-                                upon arrival. On a
-                                peaceful tree-lined lane,
-                                just near Ala Wai
-                                waterway. </p>
+                            <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
