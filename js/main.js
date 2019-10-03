@@ -32,7 +32,9 @@ function isValidForm(){
         $("#date2_error").html("<span class='text-danger'>Please Choose Departure Date</span>");
     }       
     else{
+        //Return Page
         window.location.href = "available.html";
+       
         $("#adult_error").remove();
         $("#child_error").remove();
         $("#room_error").remove();
