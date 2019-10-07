@@ -8,3 +8,5 @@ Human Computer Interaction UI/UX Website Redesign
 * [Prasangi](https://github.com/Prasangi)
 * [Janangi](https://github.com/janangiSenarathna)
 
+#### Demo : https://safnaj.github.io/HCI-Project/
+
